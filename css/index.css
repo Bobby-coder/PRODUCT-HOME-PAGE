@@ -8,21 +8,17 @@
   font-weight: 400;
 }
 
-body{
-  width: 90%;
-  margin: 0 auto;
-}
-
 nav {
   height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5%;
 }
 
 .nav-items {
   display: flex;
-  gap: 80px;
+  gap: 40px;
 }
 
 .nav-items h5:first-child {
@@ -36,10 +32,12 @@ nav {
 
 .intro-section {
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
+  padding: 0 5%;
 }
 
 .left-section {
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -79,7 +77,6 @@ nav {
 }
 
 .text {
-  width: 600px;
   font-size: 12px;
   opacity: 0.6;
 }
@@ -118,7 +115,7 @@ nav {
 
 [src="./images/headphones.jpg"] {
   height: 420px;
-  width: 550px;
+  width: 450px;
 }
 
 .discount-content {
@@ -169,7 +166,7 @@ nav {
   display: none;
 }
 
-@media only screen and (max-width:520px){
+@media only screen and (max-width:1000px){
 
   nav{
     height: 64px;
@@ -190,7 +187,7 @@ nav {
     display: none;
   }
 
-  nav > img[src="./images/actions.svg"]{
+  nav > img[src="./images/actions.png"]{
     display: none;
   }
 
@@ -200,14 +197,16 @@ nav {
   }
 
   .intro-section{
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 50px;
-    margin-bottom: 20px;
+    margin-top: 80px;
   }
 
   .left-section{
+    width: auto;
     gap: 20px;
-    margin-top: 80px;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .left-section h3{
@@ -221,10 +220,6 @@ nav {
 
   .sub-headline{
     margin-left: 0;
-  }
-
-  .text{
-    width: auto;
   }
 
   .action-btns{
